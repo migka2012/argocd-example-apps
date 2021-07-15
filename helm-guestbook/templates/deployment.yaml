@@ -38,4 +38,4 @@ spec:
               port: http
           env:
           - name: JAVA_OPTIONS
-            value: "-Dspring.profiles.active={{ .Values.environment.profiles }}"
+            value: "-Dspring.profiles.active=dev"
