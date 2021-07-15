@@ -37,7 +37,7 @@ spec:
               path: /
               port: http
           resources:
-        - env:
+          env:
           - name: JAVA_OPTIONS
             value: "-Dspring.profiles.active={{ .Values.environment.profiles }}"  
 {{ toYaml .Values.resources | indent 12 }}
