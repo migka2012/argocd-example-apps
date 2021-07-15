@@ -6,9 +6,9 @@ replicaCount: 1
 
 image:
   repository: steven121/demo-kafka-producer
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "9"
+  tag: "10"
 
 imagePullSecrets: []
 nameOverride: ""
