@@ -14,10 +14,12 @@ imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
-
 service:
   type: ClusterIP
   port: 8585
+
+environment:
+  profiles: dev  
 
 ingress:
   enabled: false
