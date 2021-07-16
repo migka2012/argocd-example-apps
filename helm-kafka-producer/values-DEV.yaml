@@ -20,7 +20,7 @@ service:
 
 environment:
   profiles: "dev"
-  commitId: "9a8bb108cc82858ded0cdfec0fd112dd03a63c91"
+  randomUUID: "9a8bb108cc82858ded0cdfec0fd112dd03a63c91"
 
 ingress:
   enabled: false

@@ -8,12 +8,10 @@ spec:
   selector:
     matchLabels:
       app: {{ template "kafka-producer-chart.name" . }}
-      commit: {{ .Values.environment.commitId }}
   template:
     metadata:
       labels:
         app: {{ template "kafka-producer-chart.name" . }}
-        commit: {{ .Values.environment.commitId }}
     spec:
       containers:
       - image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
@@ -21,3 +19,6 @@ spec:
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         ports:
         - containerPort: 8585
+        env:
+        - name: RANDOM_UUID
+          value: {{ .Values.environment.randomUUID }}
