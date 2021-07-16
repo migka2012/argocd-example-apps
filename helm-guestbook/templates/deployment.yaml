@@ -14,13 +14,11 @@ spec:
     matchLabels:
       app: {{ template "helm-guestbook.name" . }}
       release: {{ .Release.Name }}
-      commit: {{ .Values.environment.commitId }}
   template:
     metadata:
       labels:
         app: {{ template "helm-guestbook.name" . }}
         release: {{ .Release.Name }}
-        commit: {{ .Values.environment.commitId }}
     spec:
       containers:
         - name: {{ .Chart.Name }}
