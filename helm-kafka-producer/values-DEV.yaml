@@ -19,7 +19,8 @@ service:
   port: 8585
 
 environment:
-  profiles: dev  
+  profiles: "dev"
+  commitId: "9a8bb108cc82858ded0cdfec0fd112dd03a63c91"
 
 ingress:
   enabled: false
