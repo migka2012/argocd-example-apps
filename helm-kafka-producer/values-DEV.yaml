@@ -8,7 +8,7 @@ image:
   repository: steven121/demo-kafka-producer
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "10"
+  tag: "11"
 
 imagePullSecrets: []
 nameOverride: ""
