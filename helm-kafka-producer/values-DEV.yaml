@@ -20,7 +20,7 @@ service:
 
 environment:
   profiles: "dev"
-  randomUUID: "9a8bb108cc82858ded0cdfec0fd112dd03a63c91"
+  randomUUID: "f59d502a-b6a5-41c7-a2f8-92de2a5fb042"
 
 ingress:
   enabled: false
